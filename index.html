@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild Mushrom Gallery</title>
+    <title>Baber of the Woods</title>
 
     <!-- Bootsrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
+
     <!-- Google Fonts CDN  -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
 
@@ -33,102 +33,219 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My Photos <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#content">My Photos <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Me</a>
+                    <a class="nav-link" href="ContactMe.html">Contact Me</a>
                 </li>
             </ul>
-            <a href="https://www.linkedin.com/in/matt-baber-68b9711b3/" ><i class="fab fa-linkedin px-2" style="color: #0274B3; font-size: 3em;"></i></a>
-            <a href="https://www.instagram.com/psst.itsacoup/" ><i class="fab fa-instagram-square px-2" style="color: #CD255E; font-size: 3em;"></i></a>
-            <a href="https://github.com/Itsacoup" ><i class="fab fa-git-alt px-2" style="color: #F05133; font-size: 3em;"></i></a>
-            
+            <span class="icons rounded">
+                <a href="https://www.linkedin.com/in/matt-baber-68b9711b3/"><i class="fab fa-linkedin px-2"
+                        style="color: #0274B3; font-size: 3em;"></i></a>
+                <a href="https://www.instagram.com/psst.itsacoup/"><i class="fab fa-instagram-square px-2"
+                        style="color: #CD255E; font-size: 3em;"></i></a>
+                <a href="https://github.com/Itsacoup"><i class="fab fa-git-alt px-2"
+                        style="color: #F05133; font-size: 3em;"></i></a>
+            </span>
         </div>
     </nav>
-    </div>
+    
 
     <section id="header" class="jumbotron text-left rounded-0">
         <h1 class="display-3">Baber of the Woods</h1>
-        <p class="lead"> A collection of photography of some of the finest specimens of fungi <br> 
-           I have come across in my forays through the wilds of Northeast Ohio and elsewhere...
+        <p class="lead"> A collection of photography of some of the finest specimens of fungi <br>
+            I have come across in my forays through the wilds of Northeast Ohio and elsewhere...
         </p>
     </section>
 
     <Div class="container">
-        <section id="content">
+        <section id="content" data-toggle="modal" data-target="#photoModal">
             <div class="row justify-content-around my-5">
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/GemStuddedPuffball.JPG" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0  p-2 border border-dark rounded">
+                    <img src="Assets/GemStuddedPuffball.JPG" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="0" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2">
-                    <img src="Assets/YoungChicken.JPG" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0  p-2 border border-dark rounded">
+                    <img src="Assets/YoungChicken.JPG" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="1" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2">
-                    <img src="Assets/UnidentifiedCoprinus.JPG" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0  p-2 border border-dark rounded">
+                    <img src="Assets/UnidentifiedCoprinus.JPG" alt="" class="img-responsive" data-target="#carouselPhoto" 
+                        data-slide-to="2" width="100%" height="auto">
                 </div>
             </div>
             <hr>
             <div class="row justify-content-around my-5">
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/LargeHericium.jpg" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/LargeHericium.jpg" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="3" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/RudyAndGoldenOyster.jpg" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/RudyAndGoldenOyster.jpg" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="4" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/OysterFromUnderneath.jpg" alt="" class="img-responsive" width="100%" height="auto">
-                </div>
-            </div>
-            <hr>
-            <div class="row justify-content-around my-5">
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/SunnyChicken.JPG" alt="" class="img-responsive" width="100%" height="auto">
-                </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/LargeDryad.JPG" alt="" class="img-responsive" width="100%" height="auto">
-                </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/KnotweedFiddlehead.jpg" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/OysterFromUnderneath.jpg" alt="" class="img-responsive" data-target="#carouselPhoto" 
+                        data-slide-to="5" width="100%" height="auto">
                 </div>
             </div>
             <hr>
             <div class="row justify-content-around my-5">
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/Reishi.jpg" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/SunnyChicken.JPG" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="6" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/JackoLantern.jpg" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/LargeDryad.JPG" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="7" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/BearsHead.JPG" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/KnotweedFiddlehead.jpg" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="8" width="100%" height="auto">
                 </div>
             </div>
             <hr>
             <div class="row justify-content-around my-5">
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/MixedCrate.JPG" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/Reishi.jpg" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="9" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/RudyAndCaesar.jpg" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/JackoLantern.jpg" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="10" width="100%" height="auto">
                 </div>
-                <div class="col-3 p-2 border border-dark rounded">
-                    <img src="Assets/MorelLineup.JPG" alt="" class="img-responsive" width="100%" height="auto">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/BearsHead.JPG" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="11" width="100%" height="auto">
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-around my-5">
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/MixedCrate.JPG" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="12" width="100%" height="auto">
+                </div>
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/RudyAndCaesar.jpg" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="13" width="100%" height="auto">
+                </div>
+                <div class="col-lg-3 my-3 my-lg-0 p-2 border border-dark rounded">
+                    <img src="Assets/MorelLineup.JPG" alt="" class="img-responsive" data-target="#carouselPhoto"
+                        data-slide-to="14" width="100%" height="auto">
                 </div>
             </div>
         </section>
     </div>
 
-  
+    <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="carouselPhoto" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="Assets/GemStuddedPuffball.JPG">
+                                <p class="p-2">A young, prime fruiting of gem studded puffball. Edible with caution. <br> Latin Name - <em>Lycoperdon perlatum</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/YoungChicken.JPG">
+                                <p class="p-2">A very fresh, young chicken of the woods, choice edible. <br> Latin Name - <em>Laetiporus Sulphureus</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/UnidentifiedCoprinus.JPG">
+                                <p class="p-2">An unidentified specimen, likely from the coprinus genus, edibility unknown. <br> Latin Name - <em>??????</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/LargeHericium.jpg">
+                                <p class="p-2">A large fruiting of coral tooth fungus, grows almost exclusively on downed beech, as seen here, edible. <br> Latin Name - <em>Hericium Coralloides</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/RudyAndGoldenOyster.jpg">
+                                <p class="p-2">One of my favorite photos, non-native golden oysters. All credit of the find goes to my dog Rudy, choice edible. <br> Latin Name - <em>Pleurotus citrinopileatus</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/OysterFromUnderneath.jpg">
+                                <p class="p-2">Common Oyster Mushroom, commonly fruits up standing dead hardwoods, choice edible. <br> Latin Name - <em>Pleurotus Ostreatus</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/SunnyChicken.JPG">
+                                <p class="p-2">Another image of a slightly older chicken of the woods, basking in morning sun, choice edible. <br> Latin Name - <em>Laetiporus Sulphureus</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/LargeDryad.JPG">
+                                <p class="p-2">Dryad's saddle mushroom, grows quite large and is quite common in early spring, edible but not desirable.  <br> Latin Name - <em>Polyporus Squamosus</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/KnotweedFiddlehead.jpg">
+                                <p class="p-2">Obviously not mushrooms, but a mixed crate of spring edible, japanese knotweed and ostrich fern fiddleheads. </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/Reishi.jpg">
+                                <p class="p-2">Late spring fruiting of red reishi on hemlock, Edible, but as medicinal in form of tea/tincture. <br> Latin Name - <em>Ganoderma Tsugae</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/JackoLantern.jpg">
+                                <p class="p-2">Young jackolantern mushroom, a very beautiful species to observe, gill supposedly bioluminescent at night, poisonus, but not known to be lethal. <br> Latin Name - <em>Omphalotus olearius</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/BearsHead.JPG">
+                                <p class="p-2">A small fruiting of bear's head tooth fungus, choice edible. <br> Latin Name - <em>Hericium Americanum</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/MixedCrate.JPG">
+                                <p class="p-2">Another mixed crate, including more hericium, lilac boletes, chantrelles, maitake and some paw paws.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/RudyAndCaesar.jpg">
+                                <p class="p-2">A beautiful young fruiting of caesar's mushroom. Edible, but with extreme caution, it is a member of the highly toxic amanita family and must be certain of identification. <br> Latin Name - <em>Amanita caesarea</em></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="Assets/MorelLineup.JPG">
+                                <p class="p-2">A line-up of some beautiful spring morels, choice edible. <br> Latin Name - <em>Morchella Esculenta</em></p>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselPhoto" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselPhoto" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section id="footer">
         <div class="row">
             <div class="col-12 text-center">
-                <p class="mt-3 mb-0" >All Images Taken By Matt Baber</p>
-                <p class="mt-0 mb-3" >2020</p>
+                <p class="mt-3 mb-0">All Images Taken By Matt Baber</p>
+                <p class="mt-0 mb-3">2020</p>
             </div>
         </div>
     </section>
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
